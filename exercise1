@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class practice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		 Scanner input = new Scanner(System.in);
+		 
+		int number1;
+		int number2;
+		int number3;
+		int number4;
+		int number5;
+		int smallest;
+		int biggest;
+		
+		System.out.print("Enter first integer: "); // prompt 
+	    number1 = input.nextInt(); // read first number from user
+	    
+	    System.out.print("Enter second integer: "); // prompt 
+	    number2 = input.nextInt(); // read first number from user
+	    
+	    System.out.print("Enter third integer: "); // prompt 
+	    number3 = input.nextInt(); // read first number from user
+	    
+	    System.out.print("Enter fourth integer: "); // prompt 
+	    number4 = input.nextInt(); // read first number from user
+	    
+	    System.out.print("Enter fifth integer: "); // prompt 
+	    number5 = input.nextInt(); // read first number from user
+	    
+	    if (number1 < number2){
+	    	smallest = number1;
+	    }
+	    else{smallest = number2;
+	}
+	    if (number3 < smallest){
+	    	smallest = number3;
+	    }
+	    if (number4 < smallest){
+	    	smallest = number4;
+	    }
+	    if (number5 < smallest){
+	    	smallest = number5;
+	    }
+
+
+	    
+	    
+	    if (number1 > number2){
+	    	biggest = number1;
+	    }
+	    else{biggest = number2;
+	}
+	    if (number3 > biggest){
+	    	biggest = number3;
+	    }
+	    if (number4 > biggest){
+	    	biggest = number4;
+	    }
+	    if (number5 > biggest){
+	    	biggest = number5;
+	    }
+	 System.out.printf("%s%d%s%d", "the largest number is: ", biggest, "\nthe smallest number is: ", smallest);
+
+}}
